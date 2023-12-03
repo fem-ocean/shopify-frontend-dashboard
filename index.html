@@ -1,0 +1,265 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopify Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./app.css" />
+</head>
+
+<body id="body">
+    <nav>
+        <div id="navbar">
+            
+            <div class="logo-div">
+                <a href="https://www.shopify.com"><img src="assets/shopify-icon.svg" alt="shopify-logo" /></a>
+            </div>
+            <div class="search-div">
+                <img src="assets/icon-search.svg" alt="search-image" />
+                <input type="text" placeholder="Search" id="input-query" />
+            </div>
+            <div class="notification-div">
+                <button 
+                    class="bell" 
+                    aria-haspopup="true" 
+                    aria-expanded="false" 
+                    aria-controls="bell-notification" 
+                    id="bell-button"
+                    role="button">
+                    <img src="assets/icon-bell.svg" alt="icon-bell" />
+                </button>
+                <!-- pop-up when class bell is clicked -->
+                <div 
+                    class="bell-notification" 
+                    id="bell-notification" 
+                    aria-labelledby="bell-button"
+                    role="alert" >
+                    
+                    
+                    <div class="alerts-heading">
+                        <div><p class="alerts-div1-text">Alerts</p></div>
+                        <div class="alerts-images">
+                            <img src="assets/filter.svg" alt="filter"/>
+                            <img src="assets/circle-tick.svg" alt="tick" />
+                        </div>
+                    </div>
+                    <div class="alerts-text"><p>Alerts about your store and account will show here</p></div>
+                </div>
+
+                <button class="notification" id="notification" aria-haspopup="true" aria-controls="notification-dropdown" aria-expanded="false" >
+                    <p>Davii Collections</p>
+                    <div class="acronym">
+                        <p>DC</p>
+                    </div>
+                </button>
+                <ul class="name-notification-dropdown" id="notification-dropdown" aria-labelledby="notification" role="menu">
+                    <div class="notification-section1">
+                        <li class="section1-row1" role="menuitem">
+                            <div class="section1-row1-item1">
+                                <div class="acronym-logo"><p>DC</p></div>
+                                <p class="name-in-dropdown">Davii Collections</p>
+                            </div>
+                            <div><img src="assets/check.svg" alt="checkmark" /></div>
+                        </li>
+                            <a href="https://admin.shopify.com" class="section1-row2-a"><li role="menuitem" class="section1-row2">
+                                    <img src="assets/store.svg" />
+                                    <p class="section1-row2-text">All stores</p>
+                            </li></a>
+                        
+                        
+                    </div>
+                    
+                    <hr class="line1" />
+
+                    <div class="notification-section2">
+                            <a href="https://admin.shopify.com" class="section1-row2-a"><li role="menuitem" class="section2-div">
+                                <p>Help Center</p>     
+                        </li></a>
+                        
+                            <a href="https://admin.shopify.com" class="section1-row2-a"><li role="menuitem" class="section2-div">
+                                <p>Changelog</p>
+                            
+                        </li></a>
+                        
+                            <a href="https://admin.shopify.com" class="section1-row2-a"><li role="menuitem" class="section2-div">
+                                <div >
+                                    <p>Community forums</p>
+                                </div>
+                            
+                        </li></a>
+                        
+                            <a href="https://admin.shopify.com" class="section1-row2-a"><li role="menuitem" class="section2-div">
+                                    <p>Hire a Shopify Partner</p>
+                            
+                        </li></a>
+                        
+                            <a href="https://admin.shopify.com" class="section1-row2-a"><li role="menuitem" class="section2-div">
+                                    <p>Keyboard shortcuts</p>
+                            
+                        </li></a>
+                        
+                    </div>
+
+                    <hr class="line1" />
+
+                    <div class="notification-section2">
+                        <li role="menuitem">
+                            <div class="section3-div">
+                                <p>David Micheal</p>
+                                <p>davidmicheal@gmail.com</p>
+                            </div>
+                        </li>
+                        
+
+                            <a href="https://admin.shopify.com" class="section1-row2-a"><li role="menuitem" class="section2-div">
+                                <p>Manage account</p>
+                            
+                        </li></a>
+                        
+                            <a href="https://admin.shopify.com" class="section1-row2-a"><li role="menuitem" class="section2-div">
+                                <p>Log out</p>
+                            
+                        </li></a>
+                        
+                        
+                    </div>
+                </ul>
+            </div>
+            
+
+        </div>
+    </nav>
+
+    
+    <div class="trial-div">
+
+        <p id="trial-paragraph">Extend your trial for $1/month for 3 months on select plans.</p>
+        <span id="remove-div-span"></span>
+        
+        
+        <div class="plan-selection">
+            <a href="https://shopify.com/pricing"><div class="btn-plan-select">
+                <p>select a plan</p>
+            </div></a>
+                <img src="assets/cancel.svg" alt="cancel plan selection" id="cancel-plan-image" tabindex="0">
+        </div>
+    </div>
+    
+
+    <div class="setup-guide" id="setup-guide">
+        <div class="setup-main">
+            <div class="setup-box">
+                <div class="writeup-1">
+                    <p>Setup guide</p>
+                    <p>Use this personalized guide to get your store up and running.</p>
+                </div>
+                <div class="writeup-2">
+                    <p><span class="number-completed">0</span> / 5 completed</p>
+                    <div id="progress-bar">
+                        <div id="progress"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow" id="arrow">
+                <img id="arrow-image-down"  src="assets/chevron-down.svg" alt="arrow-down" />
+                <img id="arrow-image-up" src="assets/chevron-up.svg" alt="arrow-up" />
+            </button>
+        </div> 
+
+        <!-- Option 1 -->
+        <div class="option-online-store">
+            <div class="checkbox-and-writing">
+                <div class="animation-container"><img src="assets/unchecked.svg" alt="unchecked" class="uncheck-option" tabindex="0" /></div>
+                <div class="option1-writing-box">
+                    <p class="option1-writing-box-para1">Customize your online store</p>
+                    <p class="option1-writing-box-para2">Choose a theme and add your logo, colors and images to reflect your brand.<span class="learn-more"><a href="https://help.shopify.com/en/manual/online-store/themes/customizing-themes"> Learn more</a></span></p>
+                    <button class="customize-theme-btn"><p>Customize theme</p></button>
+                </div>
+            </div>
+            <div class="option-image"><img src="https://crushingit.tech/hackathon-assets/customise-store.png" alt="illustration1"/></div>
+        </div> 
+        
+        <!-- Option 2 -->
+        <div class="option-online-store">
+            <div class="checkbox-and-writing">
+                <div><img src="assets/unchecked.svg" alt="unchecked" class="uncheck-option" tabindex="0" /></div>
+                <div class="option1-writing-box">
+                    <p class="option1-writing-box-para1">Add your first product</p>
+                    <p class="option1-writing-box-para2">Write a description, add photos, and set pricing for the products you plan to sell.<span class="learn-more"><a href="https://help.shopify.com/en/manual/products/add-update-products"> Learn more</a></span></p>
+                    <div class="product-btns">
+                        <button class="customize-theme-btn">
+                            <p>Add product</p>
+                        </button>
+                        <button class="import-product">
+                            <p>Import Product</p>
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="option-image"><img src="https://crushingit.tech/hackathon-assets/product.png" alt="illustration2" /></div>
+        </div>
+
+        <!-- Option 3 -->
+        <div class="option-online-store">
+            <div class="checkbox-and-writing">
+                <div><img src="assets/unchecked.svg" alt="unchecked" class="uncheck-option" tabindex="0" /></div>
+                <div class="option1-writing-box">
+                    <p class="option1-writing-box-para1">Add a custom domain</p>
+                    <p class="option1-writing-box-para2">Your current domain is 222219.myshopify.com but you can add a custom domain to help customers find your online store.<span class="learn-more"><a href="https://help.shopify.com/en/manual/domains"> Learn
+                            more</a></span></p>
+                    <button class="customize-theme-btn">
+                        <p>Add domain</p>
+                    </button>
+                </div>
+            </div>
+            <div class="option-image"><img src="https://crushingit.tech/hackathon-assets/website.png" alt="illustration3" /></div>
+        </div>
+
+
+        <!-- Option 4 -->
+        <div class="option-online-store">
+            <div class="checkbox-and-writing">
+                <div><img src="assets/unchecked.svg" alt="unchecked" class="uncheck-option" tabindex="0"/></div>
+                <div class="option1-writing-box">
+                    <p class="option1-writing-box-para1">Name your store</p>
+                    <p class="option1-writing-box-para2">Your temporary store name is currently Davii collections. The store name appears in your admin and your online store.<span class="learn-more"><a href="https://help.shopify.com/en/manual/intro-to-shopify/initial-setup/setup-business-settings#set-or-change-your-online-store-name-and-legal-business-name"> Learn
+                            more</a></span></p>
+                    <button class="customize-theme-btn">
+                        <p>Name store</p>
+                    </button>
+                </div>
+            </div>
+            <div class="option-image"><img src="https://crushingit.tech/hackathon-assets/name-store.png" alt="illustration4" /></div>
+        </div>
+
+        <!-- Option 5 -->
+        <div class="option-online-store">
+            <div class="checkbox-and-writing">
+                <div><img src="assets/unchecked.svg" alt="unchecked" class="uncheck-option" tabindex="0" /></div>
+                <div class="option1-writing-box">
+                    <p class="option1-writing-box-para1">Set up a payment provider</p>
+                    <p class="option1-writing-box-para2">Choose a payment provider to start accepting payments. You’ll need to create an account with the payment provider and set it up with your Shopify store.<span class="learn-more"><a href="https://help.shopify.com/en/manual/payments"> Learn
+                            more</a></span></p>
+                    <button class="customize-theme-btn">
+                        <p>Set up payment</p>
+                    </button>
+                </div>
+            </div>
+            <div class="option-image"><img src="https://crushingit.tech/hackathon-assets/payment.png" alt="illustration5" /></div>
+        </div>
+
+        
+    </div>
+
+
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
